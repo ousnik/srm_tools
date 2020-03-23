@@ -405,18 +405,18 @@ class _CGPAPageState extends State<CGPAPage> {
           Container(
             width: 80,
             child:
-//            TextField(
-//              keyboardType: TextInputType.number,
-//              controller: myController[indx],
-//              decoration: InputDecoration(
-//                hintText: 'Credits',
-//              ),
-//            ),
-            CupertinoTextField(
-              keyboardType: TextInputType.number,
-              controller: myController[indx],
-              placeholder: "Credits",
-            ),
+           TextField(
+             keyboardType: TextInputType.number,
+             controller: myController[indx],
+             decoration: InputDecoration(
+               hintText: 'Credits',
+             ),
+           ),
+            // CupertinoTextField(
+            //   keyboardType: TextInputType.number,
+            //   controller: myController[indx],
+            //   placeholder: "Credits",
+            // ),
           ),
           Container(
               width: 120,
@@ -486,39 +486,39 @@ class _CGPAPageState extends State<CGPAPage> {
               makeRow(9),
               Divider(),
 
-//            MaterialButton(
-//              child: Text("CALCULATE"),
-//              color: Theme.of(context).accentColor,
-//              elevation: 4.0,
-//              onPressed: () {
-//
-//                String semesterGradePointAverageText = gpaCalculation();
-//                return showDialog(
-//                  context: context,
-//                  builder: (context) {
-//                    return AlertDialog(
-//                      content: Text(semesterGradePointAverageText),
-//                    );
-//                  },
-//                );
-//              },
-//            ),
-            CupertinoButton(
-              child: Text("CALCULATE"),
-              color: Theme.of(context).accentColor,
-              onPressed: (){
-                String semesterGradePointAverageText = gpaCalculation();
-                return showDialog(
-                  context: context,
-                  builder: (context) {
-                    return CupertinoAlertDialog(
-                      title: Text("Your GPA is \n\n"+semesterGradePointAverageText),
-//                      content: Text(semesterGradePointAverageText),
-                    );
-                  },
-                );
-              },
-            )
+           MaterialButton(
+             child: Text("CALCULATE"),
+             color: Theme.of(context).accentColor,
+             elevation: 4.0,
+             onPressed: () {
+
+               String semesterGradePointAverageText = gpaCalculation();
+               return showDialog(
+                 context: context,
+                 builder: (context) {
+                   return AlertDialog(
+                     content: Text(semesterGradePointAverageText),
+                   );
+                 },
+               );
+             },
+           ),
+//             CupertinoButton(
+//               child: Text("CALCULATE"),
+//               color: Theme.of(context).accentColor,
+//               onPressed: (){
+//                 String semesterGradePointAverageText = gpaCalculation();
+//                 return showDialog(
+//                   context: context,
+//                   builder: (context) {
+//                     return CupertinoAlertDialog(
+//                       title: Text("Your GPA is \n\n"+semesterGradePointAverageText),
+// //                      content: Text(semesterGradePointAverageText),
+//                     );
+//                   },
+//                 );
+//               },
+//             )
 
           ],
         ),
